@@ -1,0 +1,132 @@
+/*====================
+========Footer========
+======================*/
+
+footer {
+
+    .footer-mobile-search{
+
+        background-color: $dark-grey;
+        float: left;
+        height: 20vh;
+        padding: 2em 3.5em 2em 3.5em;
+        width: 100%;
+
+        .search {
+            background: #ededed url(/storage/images/search.png) no-repeat 90% center;
+            border: solid 1px #ccc;
+            margin-left: 10%;
+            padding: 1.5em;
+            width: 55%;
+            
+            -webkit-border-radius: 10em;
+            -moz-border-radius: 10em;
+            border-radius: 10em;
+            
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            transition: all .5s;
+            outline: none;
+            -webkit-appearance: textfield;
+            font-family: inherit;
+            font-size: 100%;
+        }
+        
+        .search:focus {
+            width: 75%;
+            background-color: #fff;
+            border-color: $red;
+            -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+            -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+            box-shadow: 0 0 5px rgba(109,207,246,.5);
+            margin-left: 0;
+            padding-left: 1em;
+        }
+    }
+
+    .footer-mobile-socials{
+
+        background-color: $dark-grey;
+        display: inline-flex;
+        float: left;
+        height: 20vh;
+        margin: 0;
+        padding: 2em 3em;
+        width: 100%;
+        
+        .footer-mobile-socials-item{
+            float: left;
+            margin: 0 auto;
+            width: 25%;
+        }
+    }
+
+    .footer-mobile-contact{
+        background-color: $red;
+        bottom: 0;
+        float: left;
+        height: 55vh;
+        width: 100%;
+        z-index: $z-index-footer;
+
+        .footer-mobile-logo{
+
+            img{
+                display: block;
+                margin: 2em auto;
+                height: 10vh;
+            }
+
+            h5 {
+                color: $white;
+                font-weight: 400;
+                font-size: 1em;
+                margin: 0;
+                text-align: center;
+            }
+        }
+
+        .footer-mobile-content{
+            width: 100%;
+        }
+
+        .footer-mobile-content .footer-mobile-content-contact{
+
+            padding: 0;
+
+            h5{
+                color: $white;
+                font-family: $font-stack;
+                font-size: 1em;
+                font-weight: 400;
+                margin: 0;
+                padding: 0.2em;
+                text-align: center;
+            }
+        }
+
+        .footer-mobile-content .footer-mobile-content-legal{
+
+            li{
+                display: inline-flex;
+            }
+
+            h6{
+                color: $white;
+                font-family: $font-stack;
+                font-weight: 400;
+                font-size: 0.8em;
+                margin: 0;
+                text-align: center;
+            }
+        }
+
+        .footer-mobile-content .footer-mobile-content-right{
+            width: 40%;
+        }
+
+        .footer-mobile-content .footer-mobile-content-left{
+            width: 60%;
+        }
+    }
+}

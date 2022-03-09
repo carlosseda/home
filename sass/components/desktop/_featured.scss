@@ -1,0 +1,165 @@
+.featured{
+
+    background-color: $medium-grey;
+    float: left;
+    padding-bottom: 5%;
+
+    .featured-item{
+        float: left;
+        width: 100%;
+    }
+
+    .featured-item .featured-text{
+
+        height: 55vh;
+        width: 80%;
+        z-index: 999;
+
+        @include respond-to('wsga'){
+            height: 45vh;
+        }
+
+        h2{
+            color: white;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+        p{
+            color: white;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 0 2em;
+            text-align: center;
+
+            @include respond-to('lg'){
+                font-size: 1.8em;
+                margin: 0 4em;
+            }
+        }
+
+        &.right{
+            float: right;
+            padding: 4% 0 0 20%;
+
+            @include respond-to('lg'){
+                padding: 4% 0 0 20%;
+            }
+
+            h2{
+                font-size: 2em;
+                margin: 0 2em;
+            }
+
+            p{
+                margin-top: 1em;
+            }
+        }
+
+        &.left{
+            float: left;
+            padding: 1% 20% 0 0;
+
+            h2{
+                font-size: 2.5em;
+            }
+
+            @include respond-to('lg'){
+                padding: 1% 20% 0 0;
+            }
+        }
+
+        &.purple{
+            background-color: $purple; 
+        }
+
+        &.yellow{
+            background-color: $yellow; 
+        }
+
+        &.red{
+            background-color: $red; 
+        }
+
+        &.blue{
+            background-color: $blue; 
+        }
+    }
+
+    .featured-item .featured-image{
+        position: absolute; 
+        z-index: 1000;
+        height: 55vh; 
+
+        @include respond-to('wsga'){
+            height: 45vh;
+        }
+
+        &.right{
+            right: $center;
+            width: 30%; 
+        }
+
+        &.left{
+            left: 13.5%; 
+            width: 33.3%;
+
+        }
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .featured-button{
+        background-color: transparent;
+        border: solid 0.2em $white;
+        border-radius: 10em;
+        margin: 0 auto;
+        margin-top: 2em;
+        -webkit-border-radius: 10em;
+        -moz-border-radius: 10em;
+        padding: 0.3em;
+        width: 30%;
+
+        h3{
+            color: $white;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 0;
+            opacity: 1;
+            text-align: center;
+        }
+
+        &:hover{
+            background-color: $red;
+        }
+
+        @include respond-to('lg'){
+            h3{
+                font-size: 1.7em;
+            }
+        }
+    }
+
+    .featured-separator{
+        width: 80%; 
+        float: left;
+        margin-left: 10%;
+        height: 20vh; 
+        background: $grey;
+        -webkit-transform: skew(55deg);
+        -moz-transform: skew(55deg);
+        -ms-transform: skew(55deg);
+        -o-transform: skew(55deg);
+        transform: skew(55deg);
+
+        @include respond-to('wsga'){
+            height: 18vh;
+        }
+
+        @include respond-to('lg'){
+            transform: skew(62deg);
+        }
+   }
+}

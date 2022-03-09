@@ -1,0 +1,39 @@
+.modal-form{
+
+    background-color: $red;
+    height: 100vh;
+    position: absolute;
+    top: -100vh;
+    transition: top 0.3s ease-out;
+    width: 100%;
+    z-index: $z-index-form;
+
+    &.visible{
+        position: fixed;
+        top: 0;
+    }
+
+    &.red{
+        background: $red;
+    }
+
+    &.purple{
+        background: $purple;
+    }
+
+    &.yellow{
+        background: $yellow;
+    }
+
+    &.blue{
+        background: $yellow;
+    }
+
+    .modal-form-container{
+
+        height: 100vh;
+        padding: 0 15%;
+        position: absolute;
+        width: 100%;
+    }
+}

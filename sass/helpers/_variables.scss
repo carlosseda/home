@@ -1,0 +1,62 @@
+//z-index
+
+$z-index-home: 997;
+$z-index-slider-img: 999;
+$z-index-slider-filter: 1000;
+$z-index-slider-title: 1001;
+$z-index-slider-description: 1001;
+$z-index-slider-button: 1001;
+$z-index-microfeatured-title: 2001;
+$z-index-footer: 2001;
+$z-index-header-bar: 2001;
+$z-index-header-fixed: 2001;
+$z-index-logo: 2002;
+$z-index-bar: 4000;
+$z-index-form: 5000;
+$z-index-overlay: 5001;
+$z-index-spinner: 5002;
+
+//grid
+$center: 15%;
+$wide: -$center;
+
+//typography
+$font-stack: "Ubuntu", sans-serif;
+$font-menu-inline: 1.3em;
+$font-menu: 1.1em;
+
+//forms
+$input-big: 100%;
+$input-medium: 50%;
+$input-small: 45%;
+
+//spinner
+$spinner-color: hsl(194, 100%, 47%);
+
+//colors
+$button-color: hsl(0, 0%, 28%);
+$button-color-highlight: hsl(0, 0%, 50%);
+$form-submit-button: hsl(0, 0%, 28%);
+$form-submit-button-disabled: hsl(0, 0%, 50%);
+$primary-color: hsl(0, 0%, 28%);
+$primary-color-light: hsl(194, 100%, 80%);
+$primary-color-dark: hsl(203, 70%, 45%);
+$secondary-color: hsl(159, 75%, 46%);
+$secondary-color-light: hsl(156, 100%, 70%);
+$secondary-color-dark: hsl(158, 100%, 31%);
+$red: hsl(10, 94%, 51%);
+$red-highlight: hsl(10, 100%, 62%);
+$blue: hsl(194, 100%, 47%);
+$blue-highlight: hsl(194, 100%, 61%);
+$purple: hsl(271, 100%, 43%);
+$purple-highlight: hsl(271, 99%, 62%);
+$yellow: hsl(46, 94%, 51%);
+$yellow-highlight: hsl(46, 96%, 62%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+$grey: hsl(0, 0%, 96%); 
+$medium-grey: hsl(0, 0%, 92%);
+$dark-grey: hsl(0, 0%, 28%);
+
+//style
+$text-border: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;

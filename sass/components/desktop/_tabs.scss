@@ -1,0 +1,121 @@
+.tabs{
+
+    width: 100%;
+
+    &.blue{
+
+        background-color: $blue;
+        
+        .tabs-menu{
+            background-color: $blue-highlight;
+        }
+
+        .menu-item-text{
+            background-color: $blue;
+        }
+    }
+
+    &.purple{
+
+        background-color: $purple;
+
+        .tabs-menu{
+            background-color: $purple-highlight;
+        }
+
+        .menu-item-text{
+            background-color: $purple;
+        }
+    }
+
+    .tabs-menu{
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 5%;
+        padding: 0 7%;
+
+        .menu-item{
+
+            &.selected{
+                border-bottom: 3px solid $white;
+            }
+        
+            h3{
+                color: $white;
+                cursor: pointer;
+                font-size: 1.2em;
+                font-weight: 500;
+
+                @include respond-to('lg'){
+                    font-size: 1.8em;
+                }
+            }
+        }
+    }
+
+    .menu-item-text{
+
+        display: none;
+        float: left;
+        padding: 0% 8% 7%;
+        text-align: justify;
+        width: 100%;
+
+        &.selected{
+    
+            @include fadeIn(0, 1s);
+        }
+
+        ul{
+            padding: 0;
+        }
+
+        li{
+            color: $white;
+            font-family: $font-stack;
+            font-size: 1.2em;
+            font-weight: 400;
+            margin: 2% 0 0 4%;
+        }
+
+        li::before {
+            color: $white;        
+            content: "\2022";               
+            font-size: 1em;                
+            padding-right: 0.75em; 
+            position: relative;
+            top: 0em;               
+        }
+        
+        p{
+            color: white;
+            font-family: $font-stack;
+            font-size: 1.2em;
+            font-weight: 400;
+            line-height: 1.2;
+            margin: 0;
+
+            @include respond-to('lg'){
+                font-size: 1.5em;
+            }
+
+            strong{
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .micro-featured-item {
+
+        margin-bottom: 0.5em;
+
+        .micro-featured-item-image {
+            padding: 0; 
+
+            img{
+                height: 20vh;
+                width: 100%;
+            }
+        }
+    }
+}

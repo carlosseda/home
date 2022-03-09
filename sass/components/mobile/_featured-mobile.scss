@@ -1,0 +1,134 @@
+
+.featured-mobile{
+
+    float: left;
+    position: relative;
+    width: 100%;
+    z-index: 1001;
+
+    .featured-mobile-container{
+
+        height: 25vh;
+        position: relative;
+    
+        .featured-mobile-item{
+    
+            min-height: 25vh;
+            padding: 5%;
+            transition: all 0.6s;
+            width: 100%;
+            position: relative;
+            z-index: 999;
+
+            &.selected{
+                min-height: 100vh;
+                padding-top: 5%;
+                transition: all 0.6s;
+                z-index: 2000;
+            }
+    
+            h2{
+                color: white;
+                display: inline;
+                font-size: 2em;
+                font-weight: 400;
+                margin: 0;
+                text-align: left;
+            }
+
+            h3{
+                color: white;
+                font-size: 1.2em;
+                font-style: italic;
+                font-weight: 400;
+                margin: 5% 0;
+                text-align: left;
+
+                @include respond-to('xs'){
+                    font-size: 1em;
+                }
+            }
+
+            svg{
+                height: 2.5em;
+                position: absolute;
+                transition: all 0.6s;
+                right: 2em;
+                width: 2.5em;
+
+                path{
+                    fill: $white;
+                }
+
+                &.featured-back{
+                    transform: rotate(180deg);
+                    transition: all 0.6s;
+                }
+            }
+    
+            &.purple{
+                background-color: $purple; 
+            }
+    
+            &.yellow{
+                background-color: $yellow; 
+            }
+    
+            &.red{
+                background-color: $red; 
+            }
+    
+            &.blue{
+                background-color: $blue; 
+            }
+
+            .featured-items{
+                
+                display: none;
+
+                &.show{
+                    padding: 5%;
+                    position: fixed;
+                    overflow-y: scroll;
+                    top: 20vh;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                
+                    @include fadeIn(0, 1s);
+                }
+            }
+        }
+    
+        .featured-mobile-separator{
+
+            width: 30%;
+            float: right;
+            height: 0px;
+            margin-top: -1.5em;
+            border-left: 25px solid transparent;
+            position: relative;
+        
+            &.blue{
+                z-index: 1000;
+                border-bottom: 25px solid $blue;
+            }
+    
+            &.purple{
+                z-index: 1000;
+                border-bottom: 25px solid $purple;
+            }
+
+                
+            &.yellow{
+                z-index: 1000;
+                border-bottom: 25px solid $yellow;
+            }
+    
+            &.red{
+                border-bottom: 25px solid $red;
+            }
+        }
+    }    
+}
+

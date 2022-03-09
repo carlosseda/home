@@ -1,0 +1,26 @@
+.posts{
+
+    background-color: #f8c10d;
+    float: left;
+    padding: 2% 7%;
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+
+    .posts-title{
+
+        float: left;
+        padding: 7% 0 6% 0;
+        width: 100%;
+
+        h2{
+            color: $dark-grey;
+            margin: 0;
+            text-transform: uppercase;
+
+            @include respond-to('lg'){
+                font-size: 3.5em;
+            }
+        }
+    }
+}

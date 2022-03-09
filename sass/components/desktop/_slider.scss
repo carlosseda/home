@@ -1,0 +1,90 @@
+.slider{
+    
+    img{
+        height: 85vh;
+        width: 100%;
+        opacity: 0.4;
+        position: absolute;
+        z-index: $z-index-slider-img;
+    }
+
+    .filter{
+        height: 85vh;
+        background-color: rgb(0, 0, 0);
+        width: 100%;
+        z-index: $z-index-slider-filter;
+    }
+
+    .slider-title{
+        color: $white;
+        left: $center;
+        top: 25vh;
+        position: absolute;
+        width: 60%;
+        z-index: $z-index-slider-title;
+
+        h1{
+            font-size: 3.6em;
+        }
+
+        @include respond-to('lg'){
+            h1{
+                font-size: 4.5em;
+            }
+        }        
+    }
+
+    .slider-description{
+        color: $white;
+        left: $center;
+        position: absolute;
+        top: 45vh;
+        width: 60%;
+        z-index: $z-index-slider-description;
+
+        h2{
+            font-size: 2em;
+            font-weight: 500;
+        }
+
+        @include respond-to('lg'){
+            h2{
+                font-size: 2.7em;
+            }
+        }
+    }
+
+    .slider-button{
+        background-color: transparent;
+        border: solid 0.2em $white;
+        left: $center;
+        margin: 0 auto;
+        padding: 0.2em;
+        top: 70vh;
+        width: max-content;
+        -webkit-border-radius: 10em;
+        -moz-border-radius: 10em;
+        border-radius: 10em;
+        position: absolute;
+        z-index: $z-index-slider-button;
+
+        h3{
+            color: $white;
+            font-size: 1.3em;
+            font-weight: 600;
+            margin: 0.5em;
+            opacity: 1;
+            text-align: center;
+        }
+
+        &:hover{
+            background-color: $red;
+        }
+
+        @include respond-to('lg'){
+            h3{
+                font-size: 1.7em;
+            }
+        }
+    }
+}
