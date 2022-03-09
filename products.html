@@ -1,0 +1,328 @@
+<doctype html>
+    <html lang="es">
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/12d6b690/img/favicon.ico">
+    
+            <title>Título</title>
+            <meta name="description" content="descripción de la web, se recomienda 90 caracteres">
+            <meta name="keywords" 	 content="palabras clave, separadas, por comas">
+    
+            <!-- 
+            <meta property="fb:app_id"        content="" /> 
+            <meta property="og:url"           content="" />
+            <meta property="og:type"          content="website" />
+            <meta property="og:title"         content=""/>
+            <meta property="og:description"   content="" /> 
+            -->
+    
+            <link href="style/normalize.css" rel="stylesheet">
+            <link href="style/main.css" rel="stylesheet">
+        </head>
+        
+        <body>
+            <header>
+                <div class="desktop-two-columns">
+                    <div class="column">
+                        <div class="header-logo">
+                            <div class="header-logo-image">
+                                <svg viewbox="0 0 24 24">
+                                    <path d="M18.36,2.64C20,2.64 21.36,4 21.36,5.64C21.36,7.29 20,8.64 18.36,8.64C16.71,8.64 15.36,7.29 15.36,5.64C15.36,5.34 15.41,5.06 15.5,4.8C14.43,4.29 13.25,4 12,4A8,8 0 0,0 4,12L4.04,12.84L2.05,13.05L2,12A10,10 0 0,1 12,2C13.69,2 15.28,2.42 16.67,3.16C17.16,2.83 17.74,2.64 18.36,2.64M18.36,4.64A1,1 0 0,0 17.36,5.64A1,1 0 0,0 18.36,6.64C18.92,6.64 19.36,6.19 19.36,5.64C19.36,5.08 18.92,4.64 18.36,4.64M5.64,15.36C7.29,15.36 8.64,16.71 8.64,18.36C8.64,18.66 8.59,18.94 8.5,19.2C9.57,19.71 10.75,20 12,20A8,8 0 0,0 20,12L19.96,11.16L21.95,10.95L22,12A10,10 0 0,1 12,22C10.31,22 8.72,21.58 7.33,20.84C6.84,21.17 6.26,21.36 5.64,21.36C4,21.36 2.64,20 2.64,18.36C2.64,16.71 4,15.36 5.64,15.36M5.64,17.36C5.08,17.36 4.64,17.81 4.64,18.36C4.64,18.92 5.08,19.36 5.64,19.36A1,1 0 0,0 6.64,18.36A1,1 0 0,0 5.64,17.36M12,8A4,4 0 0,1 16,12A4,4 0 0,1 12,16A4,4 0 0,1 8,12A4,4 0 0,1 12,8Z" />
+                                </svg>
+                            </div>
+                
+                            <div class="header-logo-title">
+                                <h1>Título</h1>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <nav>
+                            <div class="header-menu desktop-only">
+                                <ul>
+                                    <li><a href="index.html">inicio</a></li>
+                                    <li><a href="products.html">reserva</a></li>
+                                    <li><a href="contact.html">contacto</a></li>
+                                </ul>
+                            </div>
+    
+                            <div class="header-menu-hamburger mobile-only">
+                                <button type="button" id="collapse-button">
+                                    <span></span>
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div> 
+                        </nav>
+                    </div>
+                </div>
+            </header>
+    
+            <main>
+                <div class="products">
+                    <div class="desktop-two-columns-aside mobile-one-column">
+                        <div class="column-aside column">
+                            <div class="products-category desktop-only">
+                                <div class="products-category-title">
+                                    <h2>Categorias</h2>
+                                </div>
+                                <div class="products-category-list">
+                                    <ul>
+                                        <li>Todas</li>
+                                        <li>Lanchas</li>
+                                        <li>Llauts</li>
+                                        <li>Veleros</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="column-main column">
+                            <div class="products-list">
+                                <div class="products-list-topbar">
+                                    <div class="desktop-two-columns mobile-one-column">
+                                        <div class="column">
+                                            <div class="products-list-topbar-show-products">
+                                                <span>Se están enseñando 20 de 100 productos</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="products-list-topbar-filter">
+                                                <form>
+                                                    <div class="products-list-topbar-filter-element">
+                                                        <select name="filter">
+                                                            <option value="">Todos</option>
+                                                            <option value="">Destacados</option>
+                                                            <option value="">Oferta</option>
+                                                            <option value="">De menor a mayor precio</option>
+                                                            <option value="">De mayor a menor precio</option>
+                                                        </select>
+                                                    </div>
+                                                    
+                                                    <div class="products-list-topbar-filter-element mobile-only">
+                                                        <select name="category">
+                                                            <option value="">Todas las categorías</option>
+                                                            <option value="">Lanchas</option>
+                                                            <option value="">Llauts</option>
+                                                            <option value="">Veleros</option>                                                        </select>
+                                                        </select>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="products-list-gallery">
+                                    <div class="desktop-three-columns mobile-one-column">
+                                        <div class="column">
+                                            <div class="products-list-gallery-product">
+                                                <div class="products-list-gallery-product-image">
+                                                    <img src="images/29514-15169651.webp" alt="">
+
+                                                    <div class="products-list-gallery-product-price">
+                                                        <span>100€ / día</span>
+                                                    </div>
+                                                </div>
+                                                <div class="products-list-gallery-product-title">
+                                                    <h2>Velero de 12m</h2>
+                                                </div>
+                                                <div class="products-list-gallery-product-add-to-cart">
+                                                    <button class="featured-button">Ver producto</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="products-list-gallery-product">
+                                                <div class="products-list-gallery-product-image">
+                                                    <img src="images/29514-15169651.webp" alt="">
+
+                                                    <div class="products-list-gallery-product-price">
+                                                        <span>100€ / día</span>
+                                                    </div>
+                                                </div>
+                                                <div class="products-list-gallery-product-title">
+                                                    <h2>Velero de 12m</h2>
+                                                </div>
+                                                <div class="products-list-gallery-product-add-to-cart">
+                                                    <button class="featured-button">Ver producto</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="products-list-gallery-product">
+                                                <div class="products-list-gallery-product-image">
+                                                    <img src="images/29514-15169651.webp" alt="">
+
+                                                    <div class="products-list-gallery-product-price">
+                                                        <span>100€ / día</span>
+                                                    </div>
+                                                </div>
+                                                <div class="products-list-gallery-product-title">
+                                                    <h2>Velero de 12m</h2>
+                                                </div>
+                                                <div class="products-list-gallery-product-add-to-cart">
+                                                    <button class="featured-button">Ver producto</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="desktop-three-columns mobile-one-column">
+                                        <div class="column">
+                                            <div class="products-list-gallery-product">
+                                                <div class="products-list-gallery-product-image">
+                                                    <img src="images/29514-15169651.webp" alt="">
+
+                                                    <div class="products-list-gallery-product-price">
+                                                        <span>100€ / día</span>
+                                                    </div>
+                                                </div>
+                                                <div class="products-list-gallery-product-title">
+                                                    <h2>Velero de 12m</h2>
+                                                </div>
+                                                <div class="products-list-gallery-product-add-to-cart">
+                                                    <button class="featured-button">Ver producto</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="products-list-gallery-product">
+                                                <div class="products-list-gallery-product-image">
+                                                    <img src="images/29514-15169651.webp" alt="">
+
+                                                    <div class="products-list-gallery-product-price">
+                                                        <span>100€ / día</span>
+                                                    </div>
+                                                </div>
+                                                <div class="products-list-gallery-product-title">
+                                                    <h2>Velero de 12m</h2>
+                                                </div>
+                                                <div class="products-list-gallery-product-add-to-cart">
+                                                    <button class="featured-button">Ver producto</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="products-list-gallery-product">
+                                                <div class="products-list-gallery-product-image">
+                                                    <img src="images/29514-15169651.webp" alt="">
+
+                                                    <div class="products-list-gallery-product-price">
+                                                        <span>100€ / día</span>
+                                                    </div>
+                                                </div>
+                                                <div class="products-list-gallery-product-title">
+                                                    <h2>Velero de 12m</h2>
+                                                </div>
+                                                <div class="products-list-gallery-product-add-to-cart">
+                                                    <button class="featured-button">Ver producto</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="desktop-three-columns mobile-one-column">
+                                        <div class="column">
+                                            <div class="products-list-gallery-product">
+                                                <div class="products-list-gallery-product-image">
+                                                    <img src="images/29514-15169651.webp" alt="">
+
+                                                    <div class="products-list-gallery-product-price">
+                                                        <span>100€ / día</span>
+                                                    </div>
+                                                </div>
+                                                <div class="products-list-gallery-product-title">
+                                                    <h2>Velero de 12m</h2>
+                                                </div>
+                                                <div class="products-list-gallery-product-add-to-cart">
+                                                    <button class="featured-button">Ver producto</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="products-list-gallery-product">
+                                                <div class="products-list-gallery-product-image">
+                                                    <img src="images/29514-15169651.webp" alt="">
+
+                                                    <div class="products-list-gallery-product-price">
+                                                        <span>100€ / día</span>
+                                                    </div>
+                                                </div>
+                                                <div class="products-list-gallery-product-title">
+                                                    <h2>Velero de 12m</h2>
+                                                </div>
+                                                <div class="products-list-gallery-product-add-to-cart">
+                                                    <button class="featured-button">Ver producto</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="column">
+                                            <div class="products-list-gallery-product">
+                                                <div class="products-list-gallery-product-image">
+                                                    <img src="images/29514-15169651.webp" alt="">
+
+                                                    <div class="products-list-gallery-product-price">
+                                                        <span>100€ / día</span>
+                                                    </div>
+                                                </div>
+                                                <div class="products-list-gallery-product-title">
+                                                    <h2>Velero de 12m</h2>
+                                                </div>
+                                                <div class="products-list-gallery-product-add-to-cart">
+                                                    <button class="featured-button">Ver producto</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+    
+            <footer>
+                <div class="footer-element copyright">
+                    <p>@2048</p>
+                </div>
+                <div class="footer-element author">
+                    <a href="https://thispersondoesnotexist.com/"><p>enlace a una web de verdad</p></a>
+                </div>
+            </footer>
+                
+            <script src="js/main.js"></script>
+    
+            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    
+            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+            <script>
+                WebFont.load({
+                    google: {
+                        families: ['Ubuntu:300,700,700i', 'Ubuntu+Condensed:400']
+                    }
+                });        
+            </script>
+    
+            <!-- 
+            <script>
+                (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+                
+                ga('create', '', 'auto');
+                ga('send', 'pageview');
+            </script> 
+            -->
+        </body>
+    </html>
+    

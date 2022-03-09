@@ -1,0 +1,1262 @@
+/*====================
+=======Structure======
+======================*/
+
+body{
+    background-color: hsl(226, 63%, 45%);
+    display:flex; 
+    flex-direction:column;    
+    margin: 1rem 0;
+    min-height: 100vh;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5%;
+    width: 90%;
+    z-index: 2000;
+}
+
+main{
+    margin: 2rem 0;
+    width: 100%;
+}
+
+footer{
+    margin-top: auto; 
+    width: 100%;
+}
+
+.desktop-only{
+    display: revert;
+}
+
+.mobile-only{
+    display: none;
+}
+
+/*====================
+========Columns=======
+======================*/
+
+.desktop-five-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-five-columns .column{
+    width: 18%;
+}
+
+.desktop-four-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-four-columns .column{
+    width: 22%;
+}
+
+.desktop-three-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-three-columns .column{
+    width: 30%;
+}
+
+.desktop-two-columns{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns .column{
+    width: 48%;
+}
+
+.desktop-two-columns-aside{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns-aside .column-aside{
+    width: 20%;
+}
+
+.desktop-two-columns-aside .column-main{
+    width: 75%;
+}
+
+.desktop-two-columns-inline{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.desktop-two-columns-inline .column{
+    width: 48%;
+}
+
+.desktop-two-columns-inline .column div{
+    display: flex;
+    margin-right: 1rem;
+}
+
+.desktop-one-column .column{
+    width: 100%;
+}
+
+.desktop-one-column{
+    width: 100%;
+}
+
+/*====================
+======Typography======
+======================*/
+
+h1, h2, h3, h4, h5, h6, a, p{
+    color: hsl(0, 0%, 100%);
+}
+
+h1, h2, h3, h4 {
+    font-family: "Ubuntu";
+}
+
+h5, h6 {
+    font-family: "Ubuntu Condensed";
+}
+
+a, td, p, button, span, label{
+    font-family: "Ubuntu";
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+h4 {
+    font-weight: 600;
+    text-decoration: none;
+}
+
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+a:focus, a:hover {
+    outline: none;
+    outline-offset: 0;
+    text-decoration: none;
+}
+
+/*====================
+========Form=========
+======================*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+}
+
+/*====================
+========Image=========
+======================*/
+
+img {
+    max-width: 100%;
+}
+
+/*====================
+========Buttons=======
+======================*/
+
+.featured-button{
+    background-image: linear-gradient(to right, #253786 0%, #02A8B0 50%, #253786 100%);
+    background-size: 200% auto;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 0px;
+    margin-top: 1rem;
+	min-width: 20%;
+	padding: 1rem 2rem;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+.featured-button:hover{
+    background-size: 100% auto;
+}
+
+.plus-minus-button{
+    display: flex;
+    height: 30;
+}
+
+.plus-minus-button .plus-minus-input{
+    width: 15%;
+}
+
+.plus-minus-button .plus-minus-input input{
+    border: 0;
+    border-radius: 0;
+    font-family: 'Ubuntu';
+    font-weight: 600;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+}
+
+.plus-minus-button .plus-minus-input input[type=number] {
+    -moz-appearance: textfield;
+    caret-color: transparent;
+}
+
+.plus-minus-button .plus-minus-input input:focus{
+    outline: none;
+}
+
+.plus-minus-button .plus-minus-button-element{
+    width: 15%;
+}
+
+.plus-minus-button .plus-minus-button-element button{
+    background-image: linear-gradient(to right, #253786 0%, #02A8B0 50%, #253786 100%);
+    background-size: 200% auto;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+	font-weight: 600;
+    height: 100%;
+	letter-spacing: 0;
+	line-height: 0px;
+    margin-top: 0;
+	min-width: 20%;
+	padding: 0;
+	transition: 0.5s;
+	text-decoration: none;
+    width: 100%;
+}
+
+.plus-minus-button .plus-minus-button-element button:hover{
+    background-size: 100% auto;
+}
+
+.plus-minus-button #left button{
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+
+.plus-minus-button #right button{
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+
+/*====================
+=======Haeder=========
+======================*/
+
+.header-logo{
+    display: flex;
+    width: max-content;
+}
+
+.header-logo-image svg{
+    height: 3rem;
+    width: 3rem;
+}
+
+.header-logo-image svg path{
+    fill:hsl(183, 98%, 35%);
+}
+
+.header-logo-title{
+    margin-left: 1rem;
+}
+
+.header-logo-title h1{
+    text-align: left;
+}
+
+.header-menu{
+    margin-left: auto;
+    width: max-content;
+}
+
+.header-menu ul li{
+    color:hsl(0, 0%, 100%);
+    cursor: pointer;
+    display: inline;
+    font-family: 'Ubuntu';
+    font-size: 1.5rem;
+    margin: 0 0.5rem;
+}
+
+/*====================
+========Home==========
+======================*/
+
+.home-slider{
+    height: 80vh;
+    position: relative;
+    width: 100%;
+}
+
+.home-slider-image{
+    max-height: 80vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
+}
+
+.home-slider-title{
+    background-color: hsla(0, 0%, 0%, 0.5);
+    padding: 1.5rem 1rem;
+    position: absolute;
+    left: 15%;
+    top: 15vh;
+    z-index: 1001;
+}
+
+.home-slider-button{
+    position: absolute;
+    left: 15%;
+    top: 30vh;
+    z-index: 1001;
+}
+
+.home-featured{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.home-featured-title{
+    font-size: 1.5rem;
+    margin: 2rem 0;
+    text-align: center;
+}
+
+.home-featured-element-image-price{
+    position: relative;
+}
+
+.home-featured-element-price{
+    align-content: center;
+    background-color: hsla(0, 0%, 0%, 0.5);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1001;
+}
+
+.home-featured-element-price:hover{
+    cursor: pointer;
+    opacity: 1;
+}
+
+.home-featured-element-price h4{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.home-featured-element-image{
+    position: relative;
+    z-index: 1000;
+}
+
+.home-featured-element-image img{
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.home-featured-element-description{
+    border: 1px solid hsl(226, 71%, 63%);;
+    border-top: 0;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.home-featured-element-title{
+    margin-bottom: 0.5rem;
+}
+
+.home-featured-element-title h2{
+    font-size: 1rem;
+}
+
+.home-featured-element-category{
+    margin-bottom: 0.5rem;
+}
+
+.home-featured-element-category h3{
+    color:hsl(19, 100%, 50%);
+    font-family: "Ubuntu Condensed";
+    font-size: 1rem;
+}
+
+.home-featured-element-text{
+    margin-bottom: 0.5rem;
+}
+
+.home-featured-element-text p{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.home-services{
+    display: flex;
+    margin: 3rem auto;
+    width: 90%;
+}
+
+.home-services-description{
+    width: 100%;
+}
+
+.home-services-description p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.home-services-image{
+    width: 40%;
+}
+
+.home-services-image model-viewer{
+    height: 30rem;
+    width: 30rem;
+}
+
+/*====================
+======Products========
+======================*/
+
+.products{
+    margin: 4rem auto;
+    width: 90%;
+}
+
+.products-category{
+    border-right: 2px solid hsl(226, 71%, 63%);
+    height: 100%;
+}
+
+.products-category-title{
+    margin-bottom: 1rem;
+}
+
+.products-category-list ul li{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Ubuntu';
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.products-list-topbar{
+    margin: 0.5rem 0 2rem 0;
+}
+
+.products-list-topbar-show-products span{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+}
+
+.products-list-topbar-filter{
+    margin-left: auto;
+    width: max-content;
+}
+
+.products-list-topbar-filter-element select{
+   font-family: 'Ubuntu';
+   font-weight: 600;
+   padding: 0.5rem 1rem;
+}
+
+.products-list-topbar-filter-element select:focus{
+    outline: none;
+}
+
+.products-list-gallery-product{
+    border: 0.3rem solid hsl(0, 0%, 100%);
+    border-radius: 0.5em;
+    box-shadow: 5px 5px 14px 0px hsl(0, 0%, 20%);
+    cursor: pointer;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+
+.products-list-gallery-product-image{
+    position: relative;
+}
+
+.products-list-gallery-product-title{
+    padding: 1rem 0;
+}	 
+
+.products-list-gallery-product-title h2{
+    font-size: 1.2rem;
+    text-align: center;
+}	
+
+.products-list-gallery-product-price{
+    background-color: hsla(0, 0%, 0%, 0.5);
+    padding: 0.5rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.products-list-gallery-product-price span{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+}
+
+.products-list-gallery-product-add-to-cart button{
+    border-radius: 0;
+    font-size: 1rem;
+    padding: 1.5rem 0;
+    margin: 0;
+    width: 100%;
+}
+
+/*====================
+======Product=========
+======================*/
+
+.product{
+    margin: 4rem auto;
+    width: 90%;
+}
+
+.product-image-gallery{
+    margin: 2rem 10%;
+    width: 80%;
+}
+
+.product-image-gallery-element{
+    cursor: pointer;
+}
+
+.product-info-title{
+    margin-bottom: 1rem;
+}
+
+.product-info-price{
+    margin-bottom: 1rem;
+}
+
+.product-info-description{
+    margin-bottom: 1rem;
+}
+
+.product-info-description p{
+    margin-bottom: 0.5rem;
+    text-align: justify;
+}
+
+.product-info-plus-minus{
+    display: flex;
+    margin: 3rem 0;
+}
+
+.product-info-plus-minus-title{
+    margin-right: 3rem;
+}
+
+.product-info-plus-minus-title span{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+
+/*====================
+=======Basket=========
+======================*/
+
+.basket{
+    margin: 2rem auto;
+    width: 90%;
+}
+
+.basket-title{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.basket-title h2{
+    text-align: center;
+}
+
+.basket-table table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.basket-table table th{
+    border-bottom: 0.2rem solid hsl(0, 0%, 100%);
+    color: hsl(0, 0%, 100%);
+    font-family: 'Ubuntu';
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+}
+
+.basket-table table td{
+    color: hsl(0, 0%, 100%);
+    font-family: 'Ubuntu';
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-align: center;
+}
+
+
+.basket-table table td .plus-minus-button{
+    height: 40;
+    justify-content: center;
+}
+
+.basket-resume{
+    border: 0.1rem solid hsl(0, 0%, 100%);
+    margin-left: auto;
+    margin-top: 5rem;
+    width: 30%;
+}
+
+.basket-resume-title{
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+}
+
+.basket-resume-title h3{
+    color: hsl(226, 63%, 45%);
+    text-align: center;
+}
+
+.basket-resume-element{
+    padding: 0 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.basket-resume-element h3{
+    text-align: center;
+}
+
+#basket-resume-element-total{
+    border-top: 0.1rem solid hsl(0, 0%, 100%);
+    padding-top: 0.5rem;
+}
+
+.basket-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    margin-left: auto;
+    width: 30%;
+}
+
+/*====================
+======Checkout========
+======================*/
+
+.checkout{
+    margin: 2rem auto 4rem auto;
+    width: 90%;
+}
+
+.checkout-title{
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.checkout-title h2{
+    text-align: center;
+}
+
+.checkout-form{
+    border-right: 0.1rem solid hsl(0, 0%, 100%);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1rem 15%;
+    width: 70%;
+}
+
+.checkout-form-element{
+    margin-bottom: 1rem;
+}
+
+.checkout-form-element .checkout-form-label{
+    margin-bottom: 0.5rem;
+}
+
+.checkout-form-element .checkout-form-label label{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.checkout-form-element .checkout-form-input input{
+    padding: 0.2rem 1rem;
+    width: 100%;
+}
+
+.checkout-form-element .checkout-form-input input:focus{
+    outline: none;
+}
+
+.checkout-form-element .checkout-form-input select{
+    font-family: 'Ubuntu';
+    font-weight: 600;
+    padding: 0.2rem 1rem;
+    width: 100%;
+}
+
+.products-list-topbar-filter-element select:focus{
+    outline: none;
+}
+
+.checkout-submit{
+    padding: 1rem 10%;
+    width: 80%
+}
+
+.checkout-resume{
+    border: 0.1rem solid hsl(0, 0%, 100%);
+    margin-left: auto;
+    margin-top: 1rem;
+    width: 100%;
+}
+
+.checkout-resume-title{
+    background-color: hsl(0, 0%, 100%);
+    margin-bottom: 1rem;
+    padding: 0.5rem 2rem;
+}
+
+.checkout-resume-title h3{
+    color: hsl(226, 63%, 45%);
+    text-align: center;
+}
+
+.checkout-resume-element{
+    padding: 0 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.checkout-resume-element h3{
+    text-align: center;
+}
+
+#checkout-resume-element-total{
+    border-top: 0.1rem solid hsl(0, 0%, 100%);
+    padding-top: 0.5rem;
+}
+
+.checkout-payment-form{
+    margin-top: 2rem;
+}
+
+.checkout-payment-form-element{
+    margin-bottom: 1rem;
+}
+
+.checkout-payent-form-radio,
+.checkout-payent-form-radio-label{
+    display: inline;
+    margin-right: 0.5rem;
+}
+
+.checkout-payent-form-radio-label label{
+    color: hsl(0, 0%, 100%);
+    font-weight: 600;
+}
+
+.checkout-payment-button{
+    margin-left: auto;
+    width: max-content;
+}
+
+/*====================
+=======Contact========
+======================*/
+
+.contact{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.contact-title{
+    margin: 10vh 0;
+}
+
+.contact-title h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.contact-info-option{
+    margin-bottom: 2rem;
+}
+
+.contact-info-description{
+    margin-bottom: 2rem;
+}
+
+.contact-info-description p{
+    font-size: 1.5rem;
+}
+
+.contact-info-option-icon{
+    display: inline;
+    margin-right: 1rem;
+}
+
+.contact-info-option-icon svg{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.contact-info-option-icon svg path{
+    fill:hsl(183, 98%, 35%);
+}
+
+.contact-info-option-text{
+    display: inline;
+}
+
+.contact-info-option-text span{
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+}
+
+.contact-form-element{
+    margin-bottom: 1rem;
+}
+
+.contact-form-element-label{
+    margin-bottom: 0.5rem;
+}
+
+.contact-form-element-label label{
+    color: hsl(0, 0%, 100%);
+}
+
+.contact-form-element-input{
+    width: 100%;
+}
+
+.contact-form-element-input input{
+    padding: 0.2rem 2%;
+    width: 96%;
+}
+
+.contact-form-element-input input:focus{
+    outline: none;
+}
+
+.contact-form-element-input textarea{
+    height: 20vh;
+    font-family: 'Ubuntu';
+    padding: 0.2rem 2%;
+    width: 98%;
+}
+
+.contact-form-element-input textarea:focus{
+    outline: none;
+}
+
+.contact-form-element-button{
+    margin-left: auto;
+    width: max-content;
+}
+
+/*====================
+========Footer========
+======================*/
+
+.footer-element{
+    width: 100%;
+}
+
+.footer-element p{
+    text-align: center;
+}
+
+@media (max-width:479px) {
+
+    /*====================
+    =======Structure======
+    ======================*/
+
+    body{  
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    main{
+        width: 100%;
+    }
+
+    .desktop-only{
+        display: none;
+    }
+
+    .mobile-only{
+        display: revert;
+    }
+
+    /*====================
+    =========Buttons======
+    ======================*/
+    
+    .plus-minus-button .plus-minus-button-element {
+        width: 100%;
+    }
+
+    .plus-minus-button .plus-minus-input {
+        width: 100%;
+    }
+
+    .plus-minus-button-element{
+        width: 100%;
+    }
+
+    .plus-minus-button-element button{
+        border-radius: 0.2rem;
+        margin-top: 0;
+        padding: 0;
+        height: 100%;
+        width: 100%;
+    }
+    
+    /*====================
+    ========Columns=======
+    ======================*/
+
+    .mobile-four-columns{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .mobile-four-columns .column{
+        width: 22%;
+    }
+
+    .mobile-three-columns{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .mobile-three-columns .column{
+        width: 30%;
+    }
+
+    .mobile-three-columns-start{
+        display: flex;
+        justify-content: start;
+        width: 100%;
+    }
+
+    .mobile-three-columns-start .column{
+        width: inherit;
+    }
+
+    .mobile-two-columns{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .mobile-two-columns .column{
+        width: 48%;
+    }
+
+    .mobile-one-column{
+        width: 100%;
+        display: block;
+    }
+
+    .mobile-one-column .column{
+        width: 100%;
+    }
+
+    .mobile-one-column-inline{
+        display: inherit;
+        width: 100%;
+    }
+    
+    .mobile-one-column-inline .column{
+        border-bottom: 1px solid hsl(0, 0%, 87%);
+        display: flex;
+        margin-bottom: 1rem;
+        width: 100%;
+    }
+    
+    .mobile-one-column-inline .column div{
+        display: inherit;
+        margin-right: 1rem;
+        width: 100%;
+    }
+
+    /*====================
+    ========Header========
+    ======================*/
+
+    .header-menu-hamburger{
+        margin-top: 0.5rem;
+        margin-left: auto;
+        width: 30%;
+    }
+
+    .header-menu-hamburger #collapse-button {
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        margin-top: 0;
+        width: 100%;
+    }
+    
+    .header-menu-hamburger #collapse-button:focus {
+        outline:0;
+    }
+    
+    .header-menu-hamburger #collapse-button span {
+        background: white;
+        border-radius: 1rem;
+        display: block;
+        height: 5px;
+        margin: 0.5rem auto;
+        transition: all 0.6s cubic-bezier(0.810, -0.330, 0.345, 1.375);
+        width: 100%;
+    }
+
+    .header-menu-hamburger #collapse-button span:first-child {
+        margin: 0;
+    }
+    
+    .header-menu-hamburger #collapse-button.active span:first-of-type {
+        transform: rotate(45deg) translate(1.1em, 1.1em);
+    }
+    
+    .header-menu-hamburger .header-menu-hamburger #collapse-button.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    
+    .header-menu-hamburger .header-menu-hamburger #collapse-button.active span:last-of-type {
+        transform: rotate(-45deg) translate(1px, -1px);
+    }
+    
+    .header-menu-hamburger .header-menu-hamburger #collapse-button span {
+        opacity: 1;
+        margin: 0.5rem auto;
+        transform: none;
+    }
+
+    /*====================
+    ========Home==========
+    ======================*/
+    
+    .home-slider-title{
+        top: 5vh;
+    }
+
+    .home-slider-button{
+        top: 25vh;
+    }
+
+    .home-featured-element{
+        margin-bottom: 2rem;
+    }
+
+    .home-services-image model-viewer{
+        height: 10rem;
+        width: 20rem;
+    }
+
+    .home-services-description p{
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        text-align: justify;
+    }
+
+    /*====================
+    ======Products========
+    ======================*/
+
+    .products-category{
+        display: none;
+    }
+
+    .products-list-topbar-filter{
+        margin: 0;
+        width: 100%;
+    }
+
+    .products-list-topbar-filter select{
+        width: 100%;
+    }
+
+
+    .products-list-topbar-show-products{
+        margin-bottom: 1rem;
+    }
+
+    .products-list-topbar-show-products span{
+        font-size: 0.9rem;
+    }
+
+    .products-list-topbar-filter-element{
+        margin-bottom: 0.5rem;
+    }
+
+    /*====================
+    ======Product=========
+    ======================*/
+
+    .product-image-gallery{
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    .product-info-title h2{
+        font-size: 1.2rem;
+    }
+
+    .product-info-price h3{ 
+        font-size: 1rem;
+    }
+    
+    .product-info-plus-minus-title {
+        margin-right: 5rem;
+    }
+
+    .product-info-add-to-cart{
+        margin: 0 auto;
+        width: max-content;
+    }
+
+    /*====================
+    =======Basket=========
+    ======================*/
+
+    .basket-table table td{
+        font-size: 0.9rem;
+        padding: 0.5rem 0.2rem;
+    }
+
+    .basket-table table td .plus-minus-button {
+        width: 100;
+    }
+
+    .basket-resume{
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .basket-buttons{
+        margin: 2rem 0;
+        width: 100%;
+    }
+
+    /*====================
+    =======Checkout=======
+    ======================*/
+
+    .checkout-title{
+        margin-bottom: 1rem;
+    }
+
+    .checkout-form{
+        border: 0;
+        height: max-content;
+        padding: 1rem 0;
+        width: 100%;
+    }
+
+    .checkout-resume{
+        margin-top: 0;
+    }
+
+    .checkout-payment-button{
+        margin: 0 auto;
+        width: max-content;
+    }
+
+    /*====================
+    =======Contact========
+    ======================*/
+
+    .contact{
+        margin: 0 auto;
+        width: 90%;
+    }
+
+    .contact-title{
+        margin: 5vh 0;
+    }
+
+    .contact-title h2{
+        font-size: 1.5rem;
+    }
+    
+    .contact-info{
+        width: 100%;
+    }
+
+    .contact-info-option-text span{
+        font-size: 1rem;
+    }
+
+    .contact-form-element-button{
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:1024px) {
+
+ 
+}
+
+@media (min-width: 1920px) {
+
+
+}
+
+
+
