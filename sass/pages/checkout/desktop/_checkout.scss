@@ -85,29 +85,29 @@
                     padding-top: 0.5rem;
                 }                
             }
-            
-            .checkout-payment-form{
-                margin-top: 2rem;
+        }
 
-                .checkout-payment-form-element{
-                    margin-bottom: 1rem;
+        .checkout-payment-form{
+            margin-top: 2rem;
 
-                    .checkout-payment-form-radio,
-                    .checkout-payment-form-radio-label{
-                        display: inline;
-                        margin-right: 0.5rem;
-    
-                        label{
-                            color: hsl(0, 0%, 100%);
-                            font-weight: 600;
-                        }
+            .checkout-payment-form-element{
+                margin-bottom: 1rem;
+
+                .checkout-payment-form-radio,
+                .checkout-payment-form-radio-label{
+                    display: inline;
+                    margin-right: 0.5rem;
+
+                    label{
+                        color: hsl(0, 0%, 100%);
+                        font-weight: 600;
                     }
                 }
+            }
 
-                .checkout-payment-button{
-                    margin-left: auto;
-                    width: max-content;
-                }
+            .checkout-payment-button{
+                margin-left: auto;
+                width: max-content;
             }
         }
     }

@@ -63,20 +63,20 @@
                 text-align: center;
             }
 
-            #cart-resume-element-total{
+            &#cart-resume-element-total{
                 border-top: 0.1rem solid hsl(0, 0%, 100%);
                 padding-top: 0.5rem;
             }            
         }
-
-        .cart-buttons{
-            display: flex;
-            justify-content: space-between;
-            margin-top: 2rem;
-            margin-left: auto;
-            width: 30%;
-        }
     }    
+
+    .cart-buttons{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        margin-left: auto;
+        width: 30%;
+    }
 }
 
 

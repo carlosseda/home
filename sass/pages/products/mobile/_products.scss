@@ -47,48 +47,49 @@
                 }
             }
         }
+    }
 
-        .products-list-gallery-product{
-            border: 0.3rem solid hsl(0, 0%, 100%);
-            border-radius: 0.5em;
-            box-shadow: 5px 5px 14px 0px hsl(0, 0%, 20%);
-            cursor: pointer;
-            margin-bottom: 2rem;
-            overflow: hidden;
-            
-            .products-list-gallery-product-image{
-                position: relative;
+    .products-list-gallery-product{
+        border: 0.3rem solid hsl(0, 0%, 100%);
+        border-radius: 0.5em;
+        box-shadow: 5px 5px 14px 0px hsl(0, 0%, 20%);
+        cursor: pointer;
+        margin-bottom: 2rem;
+        overflow: hidden;
+        
+        .products-list-gallery-product-image{
+            position: relative;
+        }
+
+        .products-list-gallery-product-title{
+            padding: 1rem 0;
+
+            h2{
+                font-size: 1.2rem;
+                text-align: center;
+            }	
+        }	 
+
+        .products-list-gallery-product-price{
+            background-color: hsla(0, 0%, 0%, 0.5);
+            padding: 0.5rem;
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            span{
+                color: hsl(0, 0%, 100%);
+                font-size: 1.2rem;
             }
-
-            .products-list-gallery-product-title{
-                padding: 1rem 0;
-
-                h2{
-                    font-size: 1.2rem;
-                    text-align: center;
-                }	
-            }	 
-
-            .products-list-gallery-product-price{
-                background-color: hsla(0, 0%, 0%, 0.5);
-                padding: 0.5rem;
-                position: absolute;
-                right: 0;
-                top: 0;
-
-                span{
-                    color: hsl(0, 0%, 100%);
-                    font-size: 1.2rem;
-                }
-            }
-            
-            .products-list-gallery-product-add-to-cart button{
-                border-radius: 0;
-                font-size: 1rem;
-                padding: 1.5rem 0;
-                margin: 0;
-                width: 100%;
-            }
+        }
+        
+        .products-list-gallery-product-add-to-cart button{
+            border-bottom: 0;
+            border-radius: 0;
+            font-size: 1rem;
+            padding: 1.5rem 0;
+            margin: 0;
+            width: 100%;
         }
     }
     

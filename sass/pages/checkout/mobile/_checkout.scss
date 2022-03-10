@@ -52,13 +52,12 @@
     }
 
     .checkout-submit{
-        padding: 1rem 10%;
-        width: 80%;
+        padding: 1rem 0;
+        width: 100%;
 
         .checkout-resume{
             border: 0.1rem solid hsl(0, 0%, 100%);
             margin-left: auto;
-            margin-top: 1rem;
             width: 100%;
 
             .checkout-resume-title{
@@ -73,6 +72,7 @@
             }
 
             .checkout-resume-element{
+
                 padding: 0 1rem;
                 padding-bottom: 0.5rem;
 
@@ -80,21 +80,21 @@
                     text-align: center;
                 }
 
-                #checkout-resume-element-total{
+                &#checkout-resume-element-total{
                     border-top: 0.1rem solid hsl(0, 0%, 100%);
                     padding-top: 0.5rem;
                 }                
             }
-            
-            .checkout-payment-form{
-                margin-top: 2rem;
+        }
 
-                .checkout-payment-form-element{
-                    margin-bottom: 1rem;
-                }
+        .checkout-payment-form{
+            margin-top: 2rem;
 
-                .checkout-payent-form-radio,
-                .checkout-payent-form-radio-label{
+            .checkout-payment-form-element{
+                margin-bottom: 1rem;
+
+                .checkout-payment-form-radio,
+                .checkout-payment-form-radio-label{
                     display: inline;
                     margin-right: 0.5rem;
 
@@ -103,12 +103,12 @@
                         font-weight: 600;
                     }
                 }
-
-                .checkout-payment-button{
-                    margin-left: auto;
-                    width: max-content;
-                }
             }
+        }
+
+        .checkout-payment-button{
+            margin: 0 auto;
+            width: max-content;
         }
     }
 }
