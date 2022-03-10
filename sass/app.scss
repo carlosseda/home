@@ -2,30 +2,24 @@
 
 @import "helpers/variables";
 @import "helpers/mixins";
-@import "base/contents";
 @import "base/normalize";
+@import "base/contents";
 @import "base/typography";
 @import "layout/desktop/master";
 @import "layout/desktop/header";
 @import "layout/desktop/footer";
-@import "pages/blog/desktop/posts";
-@import "pages/blog/desktop/post";
-@import "components/desktop/archive";
-@import "components/desktop/blog";
-@import "components/desktop/columns";
-@import "components/desktop/gallery";
-@import "components/desktop/spinner";
-@import "components/desktop/directory";
+@import "layout/desktop/columns";
+@import "components/desktop/featured-button";
 @import "components/desktop/featured";
-@import "components/desktop/micro-featured";
-@import "components/desktop/menu";
+@import "components/desktop/plus-minus-button";
 @import "components/desktop/slider";
-@import "components/desktop/tabs";
-@import "components/desktop/shop-form";
-@import "components/desktop/modal-form";
-@import "components/desktop/errors";
-@import "components/desktop/admin-login";
-
+@import "components/desktop/textual-banner";
+@import "pages/cart/desktop/cart";
+@import "pages/checkout/desktop/checkout";
+@import "pages/contact/desktop/contact";
+@import "pages/home/desktop/home";
+@import "pages/product/desktop/product";
+@import "pages/products/desktop/products";
 
 
 

@@ -1,0 +1,22 @@
+.featured-button{
+    background-image: linear-gradient(to right, $primary-color 0%, $secondary-color 50%, $primary-color 100%);
+    background-size: 200% auto;
+    border-radius: 1rem;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 1.2rem;
+	font-weight: 600;
+	letter-spacing: 0;
+	line-height: 0px;
+    margin-top: 1rem;
+	min-width: 20%;
+	padding: 1rem 2rem;
+	transition: 0.5s;
+	text-decoration: none;
+
+    &:hover{
+        background-size: 100% auto;
+    }
+}
+

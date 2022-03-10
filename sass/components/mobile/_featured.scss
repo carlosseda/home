@@ -8,10 +8,14 @@
         text-align: center;
     }
 
+    .featured-element{
+        margin-bottom: 2rem;
+    }
+    
     .featured-element-image-price{
         position: relative;
     }
-
+    
     .featured-element-price{
         align-content: center;
         background-color: hsla(0, 0%, 0%, 0.5);
@@ -27,22 +31,22 @@
         &:hover{
             cursor: pointer;
             opacity: 1;
-        }     
-        
-        .featured-element-price h4{
+        }
+
+        h4{
             font-size: 2rem;
             text-align: center;
         }
     }
-    
+
     .featured-element-image{
         position: relative;
-        z-index: $z-index-featured-elements;
+        z-index: $z-index-featured-image;
 
         img{
             border-top-left-radius: 0.5rem;
             border-top-right-radius: 0.5rem;
-        }
+        }        
     }
 
     .featured-element-description{
@@ -65,7 +69,7 @@
         margin-bottom: 0.5rem;
 
         h3{
-            color:$secondary-color;
+            color: $secondary-color;
             font-family: $font-stack-condensed;
             font-size: 1rem;
         }
@@ -78,5 +82,5 @@
             font-weight: 300;
             font-size: 1rem;
         }
-    }
+    } 
 }

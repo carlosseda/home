@@ -1,0 +1,23 @@
+.textual-banner{
+    display: flex;
+    margin: 3rem auto;
+    width: 90%;
+
+    .textual-banner-description{
+        width: 100%;
+
+        p{
+            font-size: 2rem;
+            font-weight: 700;
+        }
+    }
+
+    .textual-banner-image{
+        width: 40%;
+
+        model-viewer{
+            height: 30rem;
+            width: 30rem;
+        }
+    }
+}

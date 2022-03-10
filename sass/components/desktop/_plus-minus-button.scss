@@ -1,0 +1,63 @@
+.plus-minus-button{
+    display: flex;
+    height: 30;
+
+    .plus-minus-input{
+        width: 15%;
+    }
+    
+    .plus-minus-input input{
+        border: 0;
+        border-radius: 0;
+        font-family: $font-stack;
+        font-weight: 600;
+        height: 100%;
+        text-align: center;
+        width: 100%;
+    }
+
+    .plus-minus-input input[type=number] {
+        -moz-appearance: textfield;
+        caret-color: transparent;
+
+        &:focus{
+            outline: none;
+        }
+    }
+
+    .plus-minus-button-element{
+        width: 15%;
+
+        button{
+            background-image: linear-gradient(to right, $primary-color 0%, $secondary-color 50%, $primary-color 100%);
+            background-size: 200% auto;
+            border: 0.1rem solid hsl(0, 0%, 100%);
+            color: hsl(0, 0%, 100%);
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: 600;
+            height: 100%;
+            letter-spacing: 0;
+            line-height: 0px;
+            margin-top: 0;
+            min-width: 20%;
+            padding: 0;
+            transition: 0.5s;
+            text-decoration: none;
+            width: 100%;
+
+            &:hover{
+                background-size: 100% auto;
+            }
+            
+        }
+    }
+
+    #left button{
+        border-radius: 0.5rem 0 0 0.5rem;
+    }
+
+    #right button{
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+}

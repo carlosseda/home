@@ -1,0 +1,114 @@
+.checkout{
+    margin: 2rem auto 4rem auto;
+    width: 90%;
+
+    .checkout-title{
+        margin-bottom: 1rem;
+        width: 100%;
+
+        h2{
+            text-align: center;
+        }
+    }
+
+    .checkout-form{
+        border: 0;
+        display: flex;
+        flex-direction: column;
+        height: max-content;
+        padding: 1rem 0;
+        width: 100%;
+
+        .checkout-form-element{
+            margin-bottom: 1rem;
+
+            .checkout-form-label{
+                margin-bottom: 0.5rem;
+
+                label{
+                    color: hsl(0, 0%, 100%);
+                    font-weight: 600;
+                }
+            }
+
+            .checkout-form-input{
+
+                input{
+                    padding: 0.2rem 1rem;
+                    width: 100%;
+
+                    &:focus{
+                        outline: none;
+                    }
+                }
+
+                select{
+                    font-weight: 600;
+                    padding: 0.2rem 1rem;
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .checkout-submit{
+        padding: 1rem 10%;
+        width: 80%;
+
+        .checkout-resume{
+            border: 0.1rem solid hsl(0, 0%, 100%);
+            margin-left: auto;
+            margin-top: 1rem;
+            width: 100%;
+
+            .checkout-resume-title{
+                background-color: hsl(0, 0%, 100%);
+                margin-bottom: 1rem;
+                padding: 0.5rem 2rem;
+
+                h3{
+                    color: $primary-color;
+                    text-align: center;
+                }
+            }
+
+            .checkout-resume-element{
+                padding: 0 1rem;
+                padding-bottom: 0.5rem;
+
+                h3{
+                    text-align: center;
+                }
+
+                #checkout-resume-element-total{
+                    border-top: 0.1rem solid hsl(0, 0%, 100%);
+                    padding-top: 0.5rem;
+                }                
+            }
+            
+            .checkout-payment-form{
+                margin-top: 2rem;
+
+                .checkout-payment-form-element{
+                    margin-bottom: 1rem;
+                }
+
+                .checkout-payent-form-radio,
+                .checkout-payent-form-radio-label{
+                    display: inline;
+                    margin-right: 0.5rem;
+
+                    label{
+                        color: hsl(0, 0%, 100%);
+                        font-weight: 600;
+                    }
+                }
+
+                .checkout-payment-button{
+                    margin-left: auto;
+                    width: max-content;
+                }
+            }
+        }
+    }
+}

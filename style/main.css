@@ -170,23 +170,7 @@ a:focus, a:hover {
     text-decoration: none;
 }
 
-/*====================
-========Form=========
-======================*/
 
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-   -webkit-appearance: none;
-   margin: 0;
-}
-
-/*====================
-========Image=========
-======================*/
-
-img {
-    max-width: 100%;
-}
 
 /*====================
 ========Buttons=======
@@ -278,7 +262,7 @@ img {
 }
 
 /*====================
-=======Haeder=========
+=======Header=========
 ======================*/
 
 .header-logo{
@@ -321,13 +305,13 @@ img {
 ========Home==========
 ======================*/
 
-.home-slider{
+.slider{
     height: 80vh;
     position: relative;
     width: 100%;
 }
 
-.home-slider-image{
+.slider-image{
     max-height: 80vh;
     overflow: hidden;
     position: absolute;
@@ -335,7 +319,7 @@ img {
     width: 100%;
 }
 
-.home-slider-title{
+.slider-title{
     background-color: hsla(0, 0%, 0%, 0.5);
     padding: 1.5rem 1rem;
     position: absolute;
@@ -344,29 +328,29 @@ img {
     z-index: 1001;
 }
 
-.home-slider-button{
+.slider-button{
     position: absolute;
     left: 15%;
     top: 30vh;
     z-index: 1001;
 }
 
-.home-featured{
+.featured{
     margin: 0 auto;
     width: 90%;
 }
 
-.home-featured-title{
+.featured-title{
     font-size: 1.5rem;
     margin: 2rem 0;
     text-align: center;
 }
 
-.home-featured-element-image-price{
+.featured-element-image-price{
     position: relative;
 }
 
-.home-featured-element-price{
+.featured-element-price{
     align-content: center;
     background-color: hsla(0, 0%, 0%, 0.5);
     display: flex;
@@ -379,27 +363,27 @@ img {
     z-index: 1001;
 }
 
-.home-featured-element-price:hover{
+.featured-element-price:hover{
     cursor: pointer;
     opacity: 1;
 }
 
-.home-featured-element-price h4{
+.featured-element-price h4{
     font-size: 2rem;
     text-align: center;
 }
 
-.home-featured-element-image{
+.featured-element-image{
     position: relative;
     z-index: 1000;
 }
 
-.home-featured-element-image img{
+.featured-element-image img{
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
 }
 
-.home-featured-element-description{
+.featured-element-description{
     border: 1px solid hsl(226, 71%, 63%);;
     border-top: 0;
     border-bottom-left-radius: 0.5rem;
@@ -407,53 +391,53 @@ img {
     padding: 1rem;
 }
 
-.home-featured-element-title{
+.featured-element-title{
     margin-bottom: 0.5rem;
 }
 
-.home-featured-element-title h2{
+.featured-element-title h2{
     font-size: 1rem;
 }
 
-.home-featured-element-category{
+.featured-element-category{
     margin-bottom: 0.5rem;
 }
 
-.home-featured-element-category h3{
+.featured-element-category h3{
     color:hsl(19, 100%, 50%);
     font-family: "Ubuntu Condensed";
     font-size: 1rem;
 }
 
-.home-featured-element-text{
+.featured-element-text{
     margin-bottom: 0.5rem;
 }
 
-.home-featured-element-text p{
+.featured-element-text p{
     font-weight: 300;
     font-size: 1rem;
 }
 
-.home-services{
+.textual-banner{
     display: flex;
     margin: 3rem auto;
     width: 90%;
 }
 
-.home-services-description{
+.textual-banner-description{
     width: 100%;
 }
 
-.home-services-description p{
+.textual-banner-description p{
     font-size: 2rem;
     font-weight: 700;
 }
 
-.home-services-image{
+.textual-banner-image{
     width: 40%;
 }
 
-.home-services-image model-viewer{
+.textual-banner-image model-viewer{
     height: 30rem;
     width: 30rem;
 }
@@ -599,31 +583,30 @@ img {
     font-weight: 600;
 }
 
-
 /*====================
-=======Basket=========
+=========Cart=========
 ======================*/
 
-.basket{
+.cart{
     margin: 2rem auto;
     width: 90%;
 }
 
-.basket-title{
+.cart-title{
     margin-bottom: 2rem;
     width: 100%;
 }
 
-.basket-title h2{
+.cart-title h2{
     text-align: center;
 }
 
-.basket-table table{
+.cart-table table{
     border-collapse: collapse;
     width: 100%;
 }
 
-.basket-table table th{
+.cart-table table th{
     border-bottom: 0.2rem solid hsl(0, 0%, 100%);
     color: hsl(0, 0%, 100%);
     font-family: 'Ubuntu';
@@ -633,7 +616,7 @@ img {
     text-align: center;
 }
 
-.basket-table table td{
+.cart-table table td{
     color: hsl(0, 0%, 100%);
     font-family: 'Ubuntu';
     font-size: 1.2rem;
@@ -643,44 +626,44 @@ img {
 }
 
 
-.basket-table table td .plus-minus-button{
+.cart-table table td .plus-minus-button{
     height: 40;
     justify-content: center;
 }
 
-.basket-resume{
+.cart-resume{
     border: 0.1rem solid hsl(0, 0%, 100%);
     margin-left: auto;
     margin-top: 5rem;
     width: 30%;
 }
 
-.basket-resume-title{
+.cart-resume-title{
     background-color: hsl(0, 0%, 100%);
     margin-bottom: 1rem;
     padding: 0.5rem 2rem;
 }
 
-.basket-resume-title h3{
+.cart-resume-title h3{
     color: hsl(226, 63%, 45%);
     text-align: center;
 }
 
-.basket-resume-element{
+.cart-resume-element{
     padding: 0 1rem;
     padding-bottom: 0.5rem;
 }
 
-.basket-resume-element h3{
+.cart-resume-element h3{
     text-align: center;
 }
 
-#basket-resume-element-total{
+#cart-resume-element-total{
     border-top: 0.1rem solid hsl(0, 0%, 100%);
     padding-top: 0.5rem;
 }
 
-.basket-buttons{
+.cart-buttons{
     display: flex;
     justify-content: space-between;
     margin-top: 2rem;
@@ -742,10 +725,6 @@ img {
     font-weight: 600;
     padding: 0.2rem 1rem;
     width: 100%;
-}
-
-.products-list-topbar-filter-element select:focus{
-    outline: none;
 }
 
 .checkout-submit{
@@ -1092,24 +1071,24 @@ img {
     ========Home==========
     ======================*/
     
-    .home-slider-title{
+    .slider-title{
         top: 5vh;
     }
 
-    .home-slider-button{
+    .slider-button{
         top: 25vh;
     }
 
-    .home-featured-element{
+    .featured-element{
         margin-bottom: 2rem;
     }
 
-    .home-services-image model-viewer{
+    .textual-banner-image model-viewer{
         height: 10rem;
         width: 20rem;
     }
 
-    .home-services-description p{
+    .textual-banner-description p{
         font-size: 1.2rem;
         margin-bottom: 1rem;
         text-align: justify;
@@ -1172,24 +1151,24 @@ img {
     }
 
     /*====================
-    =======Basket=========
+    =======Cart=========
     ======================*/
 
-    .basket-table table td{
+    .cart-table table td{
         font-size: 0.9rem;
         padding: 0.5rem 0.2rem;
     }
 
-    .basket-table table td .plus-minus-button {
+    .cart-table table td .plus-minus-button {
         width: 100;
     }
 
-    .basket-resume{
+    .cart-resume{
         margin-top: 2rem;
         width: 100%;
     }
 
-    .basket-buttons{
+    .cart-buttons{
         margin: 2rem 0;
         width: 100%;
     }

@@ -1,32 +1,27 @@
-/*====================
-======Typography======
-======================*/
+h1, h2, h3, h4, h5, h6, a, p{
+    color: hsl(0, 0%, 100%);
+}
 
-// @font-face {
-//     font-family: 'Ubuntu';
-//     font-display: auto;
-//     src: url('/front/fonts/Ubuntu-Regular.ttf') format('ttf');
-// }
-
-// @font-face {
-//     font-family: 'Ubuntu';
-//     font-display: auto;
-//     font-weight: bold;
-//     src: url('/front/fonts/Ubuntu-Bold.ttf') format('ttf');
-// }
-
-// @font-face {
-//     font-family: 'Ubuntu Condensed';
-//     font-display: auto;
-//     src: url('/front/fonts/Ubuntu-Light.ttf') format('ttf');
-// }
-
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4 {
     font-family: $font-stack;
 }
 
+h5, h6 {
+    font-family: $font-stack-condensed;
+}
+
+a, td, th, p, button, span, label, select, input, textarea, li{
+    font-family: $font-stack;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
 h2 {
-    font-size: 3em;
+    font-size: 2rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -40,9 +35,9 @@ a {
     -webkit-transition: 300ms;
     -moz-transition: 300ms;
     -o-transition: 300ms;
-    transition: 300ms;
     font-weight: 600;
     text-decoration: none;
+    transition: 300ms;
 
     &:hover, &:focus {
         outline: none;
@@ -50,4 +45,3 @@ a {
         outline-offset: 0;
     }
 }
-
