@@ -449,7 +449,7 @@ header {
   justify-content: space-between;
   margin: 0.2rem 5%;
   width: 90%;
-  z-index: 2000;
+  z-index: 5000;
 }
 header .header-logo {
   display: flex;
@@ -467,6 +467,31 @@ header .header-logo .header-logo-title {
 }
 header .header-logo .header-logo-title h1 {
   text-align: left;
+}
+header .header-menu {
+  background-color: white;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: -100vh;
+  transition: top 0.5s;
+  width: 100%;
+  z-index: 5000;
+}
+header .header-menu.active {
+  top: 0;
+}
+header .header-menu ul {
+  margin: 70% auto;
+  height: max-content;
+  width: 35%;
+}
+header .header-menu ul li {
+  margin-bottom: 1rem;
+}
+header .header-menu ul li a {
+  color: #2a4cbb;
+  font-size: 2rem;
 }
 header .header-menu-hamburger {
   margin-left: auto;
@@ -486,12 +511,14 @@ header #collapse-button:first-child {
   margin: 0;
 }
 header #collapse-button.active span:first-of-type {
+  background: #2a4cbb;
   transform: rotate(45deg) translate(1.1em, 1.1em);
 }
 header #collapse-button.active span:nth-of-type(2) {
   opacity: 0;
 }
 header #collapse-button.active span:last-of-type {
+  background: #2a4cbb;
   transform: rotate(-45deg) translate(1px, -1px);
 }
 header #collapse-button span {

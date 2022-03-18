@@ -1,13 +1,42 @@
+<!-- Añadimos esta línea para avisar al navegador que el archivos es un documento
+html -->
 <doctype html>
+    <!-- Esta línea es para decirle al navegador que el documento está en español -->
     <html lang="es">
+        <!-- Lo que metamos dentro de esta etiqueta será información para 
+        los buscadores y navegadores -->
         <head>
+            <!-- La etiqueta "meta" en este caso indica la codificación del documento
+            entendiendo por "codificación" con qué tipo de teclado están escritos
+            los caracteres de la web -->
             <meta charset="utf-8">
+            <!-- Esta etiqueta "meta" está usando el atributo y valor "name:'viewport'"
+            y esto sirve para que la web se adapte a todos los tamaños de pantalla
+            1º Pantalla de televisión (+ de 1920px), 2º Pantalla de ordenador de 
+            escritorio/portatil (-1920px - 1280px) 3º Pantalla de tablet (1280px - 767px)
+            4º Pantalla de móvil (- 767px)
+             -->
             <meta name="viewport" content="width=device-width, initial-scale=1">
+            <!-- Mediante la etiqueta link junto a su atributo y valor "rel='shortcut icon" indicamos
+            en el valor del atributo "href" donde se encuentra el icono que aparecerá en
+            la pestaña del navegador, este icono tiene que tener unas dimensiones de
+            16x16px o 32x32px y es recomendable utilizar las extensiones de imagen 
+            .ico o .svg (dibujo vectorial)-->
             <link rel="shortcut icon" href="https://www.youtube.com/s/desktop/12d6b690/img/favicon.ico">
     
+            <!-- Las siguientes tres etiquetas son muy importantes para el posicionamiento
+            de nuestra web en los buscadores. En concreto, lo que escribamos en la etiqueta
+            "title" será el título de nuestra web en los resultados del buscador. Tienes
+            como límite 60 carácteres.  -->
             <title>Título</title>
+            <!-- Lo que escribamos como valor dentro del atributo "content" aparecerá
+            como descripción en los resultados de los buscadores. Tenemos hasta 90
+            carácteres -->
             <meta name="description" content="descripción de la web, se recomienda 90 caracteres">
-            <meta name="keywords" 	 content="palabras clave, separadas, por comas">
+            <!-- Lo que escribamos como valor dentro del atributo "content" indicará
+            a Google con palabras separada por comas el contenido temático de nuestra
+            web -->
+            <meta name="keywords" content="palabras clave, separadas, por comas">
     
             <!-- 
             <meta property="fb:app_id"        content="" /> 
@@ -16,12 +45,19 @@
             <meta property="og:title"         content=""/>
             <meta property="og:description"   content="" /> 
             -->
-    
-            <!-- <link href="style/app.css" rel="stylesheet"> -->
-            <link href="style/mobile-app.css" rel="stylesheet">
+            <!-- De nuevo la etiqueta link sirve para enlazar a un archivo externo
+            que en este caso será el archivo css que aplicará estilo a los elementos
+            html haciendo referencia a ellos mediante su nombre -->
+            <link href="style/app.css" rel="stylesheet">
+            <!-- <link href="style/mobile-app.css" rel="stylesheet"> -->
         </head>
         
+        <!-- Todo lo que metamos dentro de la etiqueta body es lo que aparecerá
+        en la pantalla -->
         <body>
+            <!-- Esta etiqueta es una caja, es decir actúa como un div, indicará
+            al buscador que lo que haya dentro de la etiqueta es la cabecera de la
+            web  -->
             <header>
                 <div class="desktop-two-columns mobile-two-columns">
                     <div class="column">
@@ -38,6 +74,9 @@
                         </div>
                     </div>
                     <div class="column">
+                        <!-- Esta etiqueta es una caja, es decir actúa como un div, indicará
+                        al buscador que lo que haya dentro de la etiqueta es un menu de la
+                        web  -->
                         <nav>
                             <div class="header-menu desktop-only">
                                 <ul>
@@ -159,7 +198,7 @@
                                                     <label for="telephone">Teléfono</label>
                                                 </div>
                                                 <div class="contact-form-element-input">
-                                                    <input type="telephone" name="telephone">
+                                                    <input type="tel" name="telephone">
                                                 </div>
                                             </div>
                                         </div>
