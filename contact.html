@@ -166,25 +166,25 @@ html -->
 
                         <div class="column">
                             <div class="contact-form">
-                                <form action="/contacto/enviar">
+                                <form class="front-form" action="/contacto/enviar" id="contact-form">
                                     <div class="desktop-two-columns mobile-one-column">
                                         <div class="column">
-                                            <div class="contact-form-element">
-                                                <div class="contact-form-element-label">
+                                            <div class="form-element">
+                                                <div class="form-element-label">
                                                     <label for="name">Nombre</label>
                                                 </div>
-                                                <div class="contact-form-element-input">
-                                                    <input type="text" name="name">
+                                                <div class="form-element-input">
+                                                    <input type="text" name="name" id="name">
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="column">
-                                            <div class="contact-form-element">
-                                                <div class="contact-form-element-label">
+                                            <div class="form-element">
+                                                <div class="form-element-label">
                                                     <label for="surname">Apellidos</label>
                                                 </div>
-                                                <div class="contact-form-element-input">
+                                                <div class="form-element-input">
                                                     <input type="text" name="surname">
                                                 </div>
                                             </div>
@@ -193,23 +193,23 @@ html -->
 
                                     <div class="desktop-two-columns mobile-one-column">
                                         <div class="column">
-                                            <div class="contact-form-element">
-                                                <div class="contact-form-element-label">
+                                            <div class="form-element">
+                                                <div class="form-element-label">
                                                     <label for="telephone">Teléfono</label>
                                                 </div>
-                                                <div class="contact-form-element-input">
+                                                <div class="form-element-input">
                                                     <input type="tel" name="telephone">
                                                 </div>
                                             </div>
                                         </div>
 
                                         <div class="column">
-                                            <div class="contact-form-element">
-                                                <div class="contact-form-element-label">
+                                            <div class="form-element">
+                                                <div class="form-element-label">
                                                     <label for="email">Email</label>
                                                 </div>
-                                                <div class="contact-form-element-input">
-                                                    <input type="email" name="email">
+                                                <div class="form-element-input">
+                                                    <input type="email" name="email" id="email">
                                                 </div>
                                             </div>        
                                         </div>                        
@@ -217,22 +217,24 @@ html -->
 
                                     <div class="desktop-one-column mobile-one-column">
                                         <div class="column">
-                                            <div class="contact-form-element">
-                                                <div class="contact-form-element-label">
+                                            <div class="form-element">
+                                                <div class="form-element-label">
                                                     <label for="message">Mensaje</label>
                                                 </div>
-                                                <div class="contact-form-element-input">
-                                                    <textarea name="message"></textarea>
+                                                <div class="form-element-input">
+                                                    <textarea class="ckeditor" name="message"></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
 
+                                    <div id="errors-container"></div>
+
                                     <div class="desktop-one-column mobile-one-column">
                                         <div class="column">
-                                            <div class="contact-form-element">
-                                                <div class="contact-form-element-button">
-                                                    <button class="featured-button">Enviar</button>
+                                            <div class="form-element">
+                                                <div class="form-element-button">
+                                                    <button id="send-button" class="featured-button">Enviar</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -255,18 +257,9 @@ html -->
                 </div>
             </footer>
                 
-            <script src="js/main.js"></script>
+            <script type="module" src="js/app-mobile.js"></script>
     
             <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-    
-            <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
-            <script>
-                WebFont.load({
-                    google: {
-                        families: ['Ubuntu:300,700,700i', 'Ubuntu+Condensed:400']
-                    }
-                });        
-            </script>
     
             <!-- 
             <script>

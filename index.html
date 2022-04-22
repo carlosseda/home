@@ -17,7 +17,9 @@
 		<meta property="og:description"   content="" /> 
         -->
 
-        <link href="style/mobile-app.css" rel="stylesheet">
+ 
+      
+        <!-- <link href="style/app.css" rel="stylesheet"> -->
         <!-- <link href="style/mobile-app.css" rel="stylesheet"> -->
     </head>
     
@@ -64,9 +66,12 @@
                 <div class="desktop-one-column mobile-one-column">
                     <div class="column">
                         <div class="slider">
-                            <div class="slider-image">
-                                <img class="desktop-only" src="images/alquiler-llaut-mallorca.webp" alt="alquiler de llaut en Mallorca" >
+                            <div class="slider-image mobile-only">
                                 <img class="mobile-only" src="images/home-mobile.webp" alt="alquiler de llaut en Mallorca" >
+                            </div>
+
+                            <div class="slider-image desktop-only">
+                                <img class="desktop-only" src="images/alquiler-llaut-mallorca.webp" alt="alquiler de llaut en Mallorca" >
                             </div>
             
                             <div class="slider-title">
@@ -104,7 +109,7 @@
                                         </div>
                                     </div>
             
-                                    <div  class="featured-element-description">
+                                    <div class="featured-element-description">
                                         <div class="featured-element-title">
                                             <h2>Pasa un día en un llaut</h2>
                                         </div>
@@ -112,7 +117,7 @@
                                             <h3>Excursión</h3>
                                         </div>
                                         <div class="featured-element-text">
-                                            <p> Meis vocent signiferumque pri et. Facilis corpora recusabo ne quo</p>
+                                            <p>Meis vocent signiferumque pri et. Facilis corpora recusabo ne quo</p>
                                         </div>
                                     </div>
                                 </div>
@@ -227,6 +232,23 @@
         </footer>
             
         <!-- <script type="module" src="js/mobile.js"></script> -->
+
+        <script>
+            if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)){
+                var link = document.createElement('link');
+                link.type = 'text/css';
+                link.rel = 'stylesheet';
+                link.href = 'style/mobile-app.css';
+            }else{
+                var link = document.createElement('link');
+                link.type = 'text/css';
+                link.rel = 'stylesheet';
+                link.href = 'style/app.css';
+
+                document.head.appendChild(link);
+            }
+        </script>
+
         <script type="module" src="js/app-mobile.js"></script>
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 
@@ -234,7 +256,7 @@
         <script>
             WebFont.load({
                 google: {
-                    families: ['Ubuntu:300,700,700i', 'Ubuntu+Condensed:400']
+                    families: ['Ubuntu:700,700i', 'Ubuntu+Condensed:400']
                 }
             });        
         </script>

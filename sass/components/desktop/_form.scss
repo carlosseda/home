@@ -1,0 +1,74 @@
+#errors-container{
+    margin-bottom: 1.5rem;
+}
+
+.just-validate-error-label{
+    color:hsl(0, 0%, 100%) !important;
+    font-family: $font-stack;
+    font-weight: 600;
+    margin-top: 0.5rem;
+}
+
+.just-validate-error-label:before{
+    content: "";
+    display: inline-block;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    margin-right: 0.5rem;
+}
+
+.ck-editor__editable_inline {
+    min-height: 30vh;
+}
+
+.ck-editor__editable_inline>:last-child{
+    color: hsl(0, 0%, 0%);
+}
+
+.form-element{
+        
+    margin-bottom: 1rem;
+
+    .form-element-label{
+        margin-bottom: 0.5rem;
+
+        label{
+            color: hsl(0, 0%, 100%);
+            font-weight: 600;
+        }
+    }
+
+    .form-element-input{
+        width: 100%;
+
+        input{
+            padding: 0.2rem 2%;
+            width: 100%;
+
+            &:focus{
+                outline: 0;
+            }
+
+            &.is-invalid{
+                border: 2px solid hsl(354, 70%, 54%);
+            }
+        }
+
+        textarea{
+            height: 20vh;
+            padding: 0.2rem 2%;
+            width: 98%;
+
+            &:focus{
+                outline: none;
+            }
+        }
+    }
+
+    .form-element-button{
+        margin-left: auto;
+        width: max-content;
+    }
+}

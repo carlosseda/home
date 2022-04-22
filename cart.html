@@ -86,9 +86,9 @@
                                     <td>Velero de 12 metros de eslora</td>
                                     <td>120 € / día</td>
                                     <td>
-                                        <div class="plus-minus-button">
+                                        <div class="plus-minus">
                                             <div class="plus-minus-button-element" id="left">
-                                                <button>-</button>
+                                                <button data-type="minus" class="plus-minus-button">-</button>
                                             </div>
                                             <div class="plus-minus-input">
                                                 <form>
@@ -96,7 +96,29 @@
                                                 </form>
                                             </div>
                                             <div class="plus-minus-button-element" id="right">
-                                                <button>+</button>
+                                                <button data-type="plus" class="plus-minus-button">+</button>
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="desktop-only">
+                                        <img src="images/29514-15169643.webp" alt="">
+                                    </td>
+                                    <td>Velero de 12 metros de eslora</td>
+                                    <td>120 € / día</td>
+                                    <td>
+                                        <div class="plus-minus">
+                                            <div class="plus-minus-button-element" id="left">
+                                                <button data-type="minus" class="plus-minus-button">-</button>
+                                            </div>
+                                            <div class="plus-minus-input">
+                                                <form>
+                                                    <input type="number" value="1" onKeyDown="return false">
+                                                </form>
+                                            </div>
+                                            <div class="plus-minus-button-element" id="right">
+                                                <button data-type="plus" class="plus-minus-button">+</button>
                                             </div>
                                         </div>
                                     </td>
@@ -185,7 +207,7 @@
             </div>
         </footer>
             
-        <script src="js/main.js"></script>
+        <script type="module" src="js/app-mobile.js"></script>
 
         <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 

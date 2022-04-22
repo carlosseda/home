@@ -450,7 +450,7 @@ header {
   justify-content: space-between;
   margin: 0 5%;
   width: 90%;
-  z-index: 2000;
+  z-index: 5000;
 }
 header .header-logo {
   display: flex;
@@ -497,7 +497,7 @@ footer .footer-element p {
   justify-content: space-between;
   width: 100%;
 }
-.desktop-five-columns .column {
+.desktop-five-columns > .column {
   width: 18%;
 }
 
@@ -506,7 +506,7 @@ footer .footer-element p {
   justify-content: space-between;
   width: 100%;
 }
-.desktop-four-columns .column {
+.desktop-four-columns > .column {
   width: 22%;
 }
 
@@ -515,7 +515,7 @@ footer .footer-element p {
   justify-content: space-between;
   width: 100%;
 }
-.desktop-three-columns .column {
+.desktop-three-columns > .column {
   width: 30%;
 }
 
@@ -524,7 +524,7 @@ footer .footer-element p {
   justify-content: space-between;
   width: 100%;
 }
-.desktop-two-columns .column {
+.desktop-two-columns > .column {
   width: 48%;
 }
 
@@ -533,17 +533,17 @@ footer .footer-element p {
   justify-content: space-between;
   width: 100%;
 }
-.desktop-two-columns-aside .column-aside {
+.desktop-two-columns-aside > .column-aside {
   width: 20%;
 }
-.desktop-two-columns-aside .column-main {
+.desktop-two-columns-aside > .column-main {
   width: 75%;
 }
 
 .desktop-one-column {
   width: 100%;
 }
-.desktop-one-column .column {
+.desktop-one-column > .column {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -586,7 +586,7 @@ footer .footer-element p {
 .featured .featured-element .featured-element-image-price {
   position: relative;
 }
-.featured .featured-element .featured-element-price {
+.featured .featured-element .featured-element-image-price .featured-element-price {
   align-content: center;
   background-color: rgba(0, 0, 0, 0.5);
   display: flex;
@@ -598,13 +598,13 @@ footer .footer-element p {
   width: 100%;
   z-index: 1001;
 }
-.featured .featured-element .featured-element-price:hover {
-  cursor: pointer;
-  opacity: 1;
-}
-.featured .featured-element .featured-element-price .featured-element-price h4 {
+.featured .featured-element .featured-element-image-price .featured-element-price h4 {
   font-size: 2rem;
   text-align: center;
+}
+.featured .featured-element .featured-element-image-price .featured-element-price:hover {
+  cursor: pointer;
+  opacity: 1;
 }
 .featured .featured-element .featured-element-image {
   position: relative;
@@ -639,14 +639,14 @@ footer .footer-element p {
   font-size: 1rem;
 }
 
-.plus-minus-button {
+.plus-minus {
   display: flex;
   height: 30;
 }
-.plus-minus-button .plus-minus-input {
+.plus-minus .plus-minus-input {
   width: 15%;
 }
-.plus-minus-button .plus-minus-input input {
+.plus-minus .plus-minus-input input {
   border: 0;
   border-radius: 0;
   font-family: "Ubuntu", sans-serif;
@@ -655,17 +655,17 @@ footer .footer-element p {
   text-align: center;
   width: 100%;
 }
-.plus-minus-button .plus-minus-input input[type=number] {
+.plus-minus .plus-minus-input input[type=number] {
   -moz-appearance: textfield;
   caret-color: transparent;
 }
-.plus-minus-button .plus-minus-input input[type=number]:focus {
+.plus-minus .plus-minus-input input[type=number]:focus {
   outline: none;
 }
-.plus-minus-button .plus-minus-button-element {
+.plus-minus .plus-minus-button-element {
   width: 15%;
 }
-.plus-minus-button .plus-minus-button-element button {
+.plus-minus .plus-minus-button-element button {
   background-image: linear-gradient(to right, #2a4cbb 0%, #02a8b1 50%, #2a4cbb 100%);
   background-size: 200% auto;
   border: 0.1rem solid white;
@@ -683,13 +683,13 @@ footer .footer-element p {
   text-decoration: none;
   width: 100%;
 }
-.plus-minus-button .plus-minus-button-element button:hover {
+.plus-minus .plus-minus-button-element button:hover {
   background-size: 100% auto;
 }
-.plus-minus-button #left button {
+.plus-minus #left button {
   border-radius: 0.5rem 0 0 0.5rem;
 }
-.plus-minus-button #right button {
+.plus-minus #right button {
   border-radius: 0 0.5rem 0.5rem 0;
 }
 
@@ -740,6 +740,71 @@ footer .footer-element p {
   width: 30rem;
 }
 
+#errors-container {
+  margin-bottom: 1.5rem;
+}
+
+.just-validate-error-label {
+  color: white !important;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  margin-top: 0.5rem;
+}
+
+.just-validate-error-label:before {
+  content: "";
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  background-color: white;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.ck-editor__editable_inline {
+  min-height: 30vh;
+}
+
+.ck-editor__editable_inline > :last-child {
+  color: black;
+}
+
+.form-element {
+  margin-bottom: 1rem;
+}
+.form-element .form-element-label {
+  margin-bottom: 0.5rem;
+}
+.form-element .form-element-label label {
+  color: white;
+  font-weight: 600;
+}
+.form-element .form-element-input {
+  width: 100%;
+}
+.form-element .form-element-input input {
+  padding: 0.2rem 2%;
+  width: 100%;
+}
+.form-element .form-element-input input:focus {
+  outline: 0;
+}
+.form-element .form-element-input input.is-invalid {
+  border: 2px solid #dc3848;
+}
+.form-element .form-element-input textarea {
+  height: 20vh;
+  padding: 0.2rem 2%;
+  width: 98%;
+}
+.form-element .form-element-input textarea:focus {
+  outline: none;
+}
+.form-element .form-element-button {
+  margin-left: auto;
+  width: max-content;
+}
+
 .cart {
   margin: 2rem auto;
   width: 90%;
@@ -771,7 +836,7 @@ footer .footer-element p {
   text-align: center;
 }
 .cart .cart-table table td .plus-minus-button {
-  height: 40;
+  height: 30;
   justify-content: center;
 }
 .cart .cart-resume {
@@ -938,37 +1003,6 @@ footer .footer-element p {
 .contact .contact-info-option .contact-info-option-text span {
   color: white;
   font-size: 1.2rem;
-}
-.contact .contact-form-element {
-  margin-bottom: 1rem;
-}
-.contact .contact-form-element .contact-form-element-label {
-  margin-bottom: 0.5rem;
-}
-.contact .contact-form-element .contact-form-element-label label {
-  color: white;
-}
-.contact .contact-form-element .contact-form-element-input {
-  width: 100%;
-}
-.contact .contact-form-element .contact-form-element-input input {
-  padding: 0.2rem 2%;
-  width: 96%;
-}
-.contact .contact-form-element .contact-form-element-input:focus {
-  outline: 0;
-}
-.contact .contact-form-element .contact-form-element-input textarea {
-  height: 20vh;
-  padding: 0.2rem 2%;
-  width: 98%;
-}
-.contact .contact-form-element .contact-form-element-input:focus {
-  outline: none;
-}
-.contact .contact-form-element .contact-form-element-button {
-  margin-left: auto;
-  width: max-content;
 }
 
 .product {

@@ -3,7 +3,7 @@
     justify-content: space-between;
     width: 100%;
 
-    .column{
+    & > .column{
         width: 18%;
     }
 }
@@ -13,7 +13,7 @@
     justify-content: space-between;
     width: 100%;
 
-    .column{
+    & > .column{
         width: 22%;
     }
 }
@@ -23,7 +23,7 @@
     justify-content: space-between;
     width: 100%;
 
-    .column{
+    & > .column{
         width: 30%;
     }
 }
@@ -33,7 +33,7 @@
     justify-content: space-between;
     width: 100%;
 
-    .column{
+    & > .column{
         width: 48%;
     }
 }
@@ -42,7 +42,7 @@
     width: 100%;
     display: block;
 
-    .column{
+    & > .column{
         width: 100%;
     }
 }
